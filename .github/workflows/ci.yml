@@ -22,5 +22,5 @@ jobs:
               uses: docker/build-push-action@v7
             with:
               context: ./backend
-              push: false  # Change to false to skip pushing
+              push: true  # Change to false to skip pushing
               tags: ${{ secrets.DOCKERHUB_USERNAME }}/skillpulse-backend:shyam
